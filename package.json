@@ -1,7 +1,7 @@
 {
   "name": "magic-gallery",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "Magic Photo Gallery",
   "author": "Majid Parvin <parvin.majid@hedcoint.com>",
   "private": true,
   "scripts": {

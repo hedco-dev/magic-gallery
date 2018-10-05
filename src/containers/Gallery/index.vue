@@ -73,9 +73,8 @@
       </li>
       <li>
         <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
+          href="#/photo/p-1/hi"
+          >
           awesome-vue
         </a>
       </li>
@@ -85,7 +84,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Gallery',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
