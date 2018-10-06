@@ -16,7 +16,10 @@ const reducers = {
     FULFILLED: (state, action) => {
       return {
         ...state,
-        photos: [...state.photos, ...action.payload],
+        photos: [
+          ...state.photos,
+          ...action.payload
+        ],
         loading: false
       }
     },

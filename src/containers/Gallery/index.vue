@@ -1,47 +1,50 @@
 <template>
-  <div class="hello">
-    <ul>
-      <li>
-        <i v-if="gallery.loading">loading...</i>
-        <button @click="actions.getPhotos(5)" >ciclk</button>
-      </li>
-      <li v-for="photo in gallery.photos">
-      <img :src="photo.images.original_still.url" />
-      </li>
-    </ul>
-  </div>
+  <Provider 
+  :mapDispatchToProps="mapDispatchToProps" 
+  :mapStateToProps="mapStateToProps" 
+  :store="store">
+    <template slot-scope="{gallery, actions}">
+        <div>
+            <ul>
+            <li>
+                <i v-if="gallery.loading">loading...</i>
+                <button @click="actions.getPhotos(5)" >click</button>
+            </li>
+            <li v-for="photo in gallery.photos" :key="photo.Id">
+                <img :src="photo.images.original_still.url" />
+            </li>
+            </ul>
+        </div>
+    </template>
+  </Provider>
 </template>
 
 <script>
-export default {
-  name: "Gallery",
-  props: ["actions", "gallery"],
-  data() {
-    return {
-      msg: ""
-    };
-  },
-  components: {
-      
-    }
-};
-</script>
+import { bindActionCreators } from 'redux'
+import Provider from 'vuejs-redux'
+import { galleryAction } from '../../actions'
+import { storeResolver } from '../../mixins'
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1,
-h2 {
-  font-weight: normal;
+export default {
+  mixins: [storeResolver],
+
+  methods: {
+    mapStateToProps(state) {
+      return {
+        gallery: state.gallery
+      }
+    },
+    mapDispatchToProps(dispatch) {
+      return { actions: bindActionCreators(galleryAction, dispatch) }
+    }
+  },
+
+  components: {
+    Provider
+  },
+
+  data: () => ({
+    
+  })
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+</script>
