@@ -1,6 +1,6 @@
 import { bindActionCreators as reduxBindActionCreators } from 'redux'
 import typeToReducer from 'type-to-reducer'
-
+import minBy from 'lodash/minBy'
 export /**
  * combile action type name to the more uniqe name
  * @param {any} prefix
@@ -78,4 +78,29 @@ export const handleActions = (initialState, reducerMap) => {
   }
 
   return typeToReducer(reducerMap, initialState)
+}
+
+export const divideArray = (array, count) => {
+  // creating desired array
+  const arrays = new Array(count)
+
+  // initiate array items
+  for (let index = 0; index < arrays.length; index++) {
+    arrays[index] = []
+    arrays[index].height = 0
+    arrays[index].index = index
+  }
+  
+  const findBestColumn = () => {
+    const min = minBy(arrays, _ => _.height)
+    return min.index
+  }
+
+  for (let index = 0; index < array.length; index++) {
+    const availableIndex = findBestColumn()
+    const item = array[index]
+    arrays[availableIndex].height += Number(item.height) / Number(item.width)
+    arrays[availableIndex].push(item)
+  }
+  return arrays
 }
