@@ -1,7 +1,7 @@
 import { handleActions } from "../utils"
 import { ROOT_STATE } from "../store"
 import galleryActionType from "../actions/galleryAction/galleryActionType"
-const { GET_PHOTOS } = galleryActionType
+const { GET_PHOTOS, RERENDER } = galleryActionType
 
 // reducer for gallery actions
 const reducers = {
@@ -26,6 +26,11 @@ const reducers = {
         error   : action.payload,
         loading : false
       }
+    }
+  },
+  [RERENDER]: state => {
+    return {
+      ...state
     }
   }
 }

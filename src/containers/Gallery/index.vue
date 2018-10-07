@@ -49,10 +49,20 @@ export default {
   name    : "Gallery",
   methods : {
     mapStateToProps(state) {
-      const gallery = { ...state.gallery }
-      this.galleryItems = divideArray(gallery.photos)
+      this.bestColumnSize = () => {
+        const padding = 0
+        const wd = window.outerWidth - padding
+        if (wd <= 600) {
+          return 1
+        } else if (wd <= 800) {
+          return 2
+        }
+        return 4
+      }
+      this.photos = state.gallery.photos
+      this.galleryItems = divideArray(this.photos, this.bestColumnSize())
       return {
-        gallery
+        gallery: state.gallery
       }
     },
     mapDispatchToProps(dispatch) {
@@ -62,18 +72,23 @@ export default {
         actions
       }
     },
-
+    handleResizing() {
+      const self = this
+      clearTimeout(this.resizeingTId)
+      this.resizeingTId = setTimeout(() => self.actions.rerender(), 600)
+    },
     loadnewData() {
       this.scrollLoading = true
       this.actions.getPhotos(this.pageSize)
       this.scrollLoading = false
     },
-
     genenrateImageUrl(photo) {
       return `/#/photo/${photo.id}`
     }
   },
-
+  mounted() {
+    window.addEventListener("resize", this.handleResizing)
+  },
   components: {
     Provider,
     Row,
@@ -81,12 +96,15 @@ export default {
     Header,
     ScrollHandler
   },
-
   data: () => ({
     photos        : [],
     scrollLoading : false,
-    pageSize      : 20
-  })
+    pageSize      : 20,
+    resizeingTId  : -1
+  }),
+  beforeDestroy() {
+    window.removeEventListener("resize", this.handleResizing)
+  }
 }
 </script>
 <style scoped>

@@ -83,20 +83,9 @@ export const handleActions = (initialState, reducerMap) => {
   return typeToReducer(reducerMap, initialState)
 }
 
-export const divideArray = array => {
-  const bestColumnSize = () => {
-    const padding = 0
-    const wd = window.outerWidth - padding
-    if (wd <= 600) {
-      return 1
-    } else if (wd <= 800) {
-      return 2
-    }
-    return 4
-  }
-  console.log(bestColumnSize(), window.outerWidth)
+export const divideArray = (array, count) => {
   // creating desired array
-  const arrays = new Array(bestColumnSize())
+  const arrays = new Array(count)
 
   // initiate array items
   for (let index = 0; index < arrays.length; index++) {
