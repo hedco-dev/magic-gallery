@@ -42,7 +42,7 @@ import { bindActionCreators } from "redux"
 import Provider from "vuejs-redux"
 import { galleryAction } from "../../actions"
 import { storeResolver } from "../../mixins"
-import { Row, Header, ScrollHandler } from "../../components"
+import { Row, Header, Column, ScrollHandler } from "../../components"
 import { divideArray } from "../../utils"
 export default {
   mixins  : [storeResolver],
@@ -77,6 +77,7 @@ export default {
   components: {
     Provider,
     Row,
+    Column,
     Header,
     ScrollHandler
   },
