@@ -13,8 +13,7 @@
           <div class="main-image-container">
             <img :src="actionPhotos.photo.url" />
           </div>
-          <div class="action-container"
-            style="width:90%;margin:0 auto">
+          <div class="action-container">
             <div class="image-box">
               <a v-if="actionPhotos.prevPhoto"
                 href="#"
@@ -24,8 +23,7 @@
             </div>
             <div class="return">
               <a href="#/">
-                <img src="/static/images/close.svg"
-                  style="width:48px" />
+                <img src="/static/images/close.svg" />
               </a>
             </div>
             <div class="image-box">
@@ -100,7 +98,7 @@ export default {
   })
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
   section.main {
     padding-top: 70px;
   }
@@ -115,38 +113,46 @@ export default {
     padding: 4px;
     margin: 0 auto;
     width: 90%;
-  }
 
-  .main-image-container > img {
-    width: 100%;
+    > img {
+      width: 100%;
+    }
   }
-
   .action-container {
     display: flex;
     align-items: stretch;
     justify-content: center;
     text-align: center;
-  }
+    width: 90%;
+    margin: 0 auto;
 
-  .action-container > div {
-    flex: 1;
-    padding: 8px;
-  }
-  .action-container > div.image-box {
-    margin: 8px 0;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0 0 4px 0px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .action-container > div.return {
-    align-self: center;
-    text-align: center;
-  }
-  .action-container > div img {
-    width: 100%;
-    max-height: 200px;
+    > div {
+      flex: 1;
+      padding: 8px;
+
+      img {
+        width: 100%;
+        max-height: 200px;
+      }
+    }
+
+    > div.image-box {
+      margin: 8px 0;
+      background-color: white;
+      border-radius: 6px;
+      box-shadow: 0 0 4px 0px black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > div.return {
+      align-self: center;
+      text-align: center;
+
+      img {
+        width: 48px;
+      }
+    }
   }
 </style>
