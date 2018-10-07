@@ -60,6 +60,9 @@ export default {
   methods: {
     mapStateToProps(state) {
       this.photos = [...state.gallery.photos]
+      if(state.gallery.photos.length === 0) {
+        location.href = "/#/"
+      }
       return {
         gallery: state.gallery
       }
