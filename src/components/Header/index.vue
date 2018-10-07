@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .navbar {
     background: rgba(255, 255, 255, 0.9);
     opacity: 0.7;
@@ -27,32 +27,35 @@ export default {
     top: 0;
     line-height: 30px;
     display: flex;
-  }
-  .navbar aside {
-    flex: 1;
-  }
-  .navbar aside.action-side {
-    text-align: right;
-  }
 
-  .navbar aside.logo-container {
-    display: flex;
-  }
+    aside {
+      flex: 1;
+    }
+    aside.action-side {
+      text-align: right;
+    }
 
-  .navbar aside.logo-container strong {
-    font-family: sans-serif;
-  }
-  .navbar aside.logo-container img {
-    height: 27px;
-    margin-right: 6px;
-  }
-  .navbar button {
-    height: 30px;
-    border: none;
-    width: 40px;
-    background-color: transparent;
-    outline: none;
-    cursor: pointer;
+    aside.logo-container {
+      display: flex;
+
+      strong {
+        font-family: sans-serif;
+      }
+      
+      img {
+        height: 27px;
+        margin-right: 6px;
+      }
+    }
+
+    button {
+      height: 30px;
+      border: none;
+      width: 40px;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+    }
   }
 
   .refreshing {
