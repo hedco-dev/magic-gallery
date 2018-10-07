@@ -40,22 +40,22 @@ import Provider from "vuejs-redux"
 import { galleryAction } from "../../actions"
 import { storeResolver } from "../../mixins"
 import { Row, Header, ScrollHandler } from "../../components"
-import { divideArray } from "../../utils"
+
 export default {
-  mixins: [storeResolver],
-  name: "Gallery",
-  methods: {
+  mixins  : [storeResolver],
+  name    : "Gallery",
+  methods : {
     mapStateToProps(state) {
       return {
         gallery: state.gallery
-      };
+      }
     },
     mapDispatchToProps(dispatch) {
       const actions = bindActionCreators(galleryAction, dispatch)
       this.actions = actions
       return {
         actions
-      };
+      }
     },
 
     loadnewData() {
@@ -77,9 +77,9 @@ export default {
   },
 
   data: () => ({
-    photos       : [],
-    scrollLoading: false,
-    pageSize     : 20
+    photos        : [],
+    scrollLoading : false,
+    pageSize      : 20
   })
 }
 </script>

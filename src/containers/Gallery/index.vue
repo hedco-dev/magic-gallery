@@ -45,22 +45,22 @@ import { storeResolver } from "../../mixins"
 import { Row, Header, ScrollHandler } from "../../components"
 import { divideArray } from "../../utils"
 export default {
-  mixins : [storeResolver],
-  name   : "Gallery",
-  methods: {
+  mixins  : [storeResolver],
+  name    : "Gallery",
+  methods : {
     mapStateToProps(state) {
       const gallery = { ...state.gallery }
       this.galleryItems = divideArray(gallery.photos, 4)
       return {
         gallery
-      };
+      }
     },
     mapDispatchToProps(dispatch) {
       const actions = bindActionCreators(galleryAction, dispatch)
       this.actions = actions
       return {
         actions
-      };
+      }
     },
 
     loadnewData() {
@@ -82,11 +82,11 @@ export default {
   },
 
   data: () => ({
-    photos       : [],
-    scrollLoading: false,
-    pageSize     : 20
+    photos        : [],
+    scrollLoading : false,
+    pageSize      : 20
   })
-};
+}
 </script>
 <style scoped>
   main {

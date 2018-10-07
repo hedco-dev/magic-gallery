@@ -47,26 +47,31 @@ import { bindActionCreators } from "redux"
 import Provider from "vuejs-redux"
 import { galleryAction } from "../../actions"
 import { storeResolver } from "../../mixins"
-import { Row, Column, Header } from "../../components"
-import { divideArray } from "../../utils"
+import { Row, Header } from "../../components"
 import findIndex from "lodash/findIndex"
 
 export default {
-  mixins : [storeResolver],
-  name   : "Photo",
+  mixins     : [storeResolver],
+  name       : "Photo",
+  props      : ["id"],
+  components : {
+    Provider,
+    Row,
+    Header
+  },
   methods: {
     mapStateToProps(state) {
       this.photos = [...state.gallery.photos]
       return {
         gallery: state.gallery
-      };
+      }
     },
     mapDispatchToProps(dispatch) {
       const actions = bindActionCreators(galleryAction, dispatch)
       this.actions = actions
       return {
         actions
-      };
+      }
     },
 
     changeImage(e, photoId) {
@@ -79,12 +84,6 @@ export default {
       this.$set(this.actionPhotos, "prevPhoto", this.photos[index - 1])
     }
   },
-  props: ["id"],
-  components: {
-    Provider,
-    Row,
-    Header
-  },
 
   mounted() {
     const index = findIndex(this.photos, _ => _.id === this.id)
@@ -92,14 +91,14 @@ export default {
   },
 
   data: () => ({
-    photos: [],
-    actionPhotos: {
-      photo: {},
-      prevPhoto: {},
-      nextPhoto: {}
+    photos       : [],
+    actionPhotos : {
+      photo     : {},
+      prevPhoto : {},
+      nextPhoto : {}
     }
   })
-};
+}
 </script>
 <style scoped>
   section.main {
