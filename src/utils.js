@@ -1,6 +1,6 @@
-import { bindActionCreators as reduxBindActionCreators } from 'redux'
-import typeToReducer from 'type-to-reducer'
-import minBy from 'lodash/minBy'
+import { bindActionCreators as reduxBindActionCreators } from "redux"
+import typeToReducer from "type-to-reducer"
+import minBy from "lodash/minBy"
 export /**
  * combile action type name to the more uniqe name
  * @param {any} prefix
@@ -25,8 +25,11 @@ export const bindActionCreators = (actionContainerMapArray, dispatch) => {
     for (const actionContainerName in actionContainerMap) {
       const actionContainer = actionContainerMap[actionContainerName]
 
-      if (typeof allActions[actionContainerName] === 'undefined') {
-        allActions[actionContainerName] = reduxBindActionCreators(actionContainer, dispatch)
+      if (typeof allActions[actionContainerName] === "undefined") {
+        allActions[actionContainerName] = reduxBindActionCreators(
+          actionContainer,
+          dispatch
+        )
       } else {
         throw new Error(`Overlapping actions found: '${actionContainerName}'`)
       }
@@ -37,7 +40,7 @@ export const bindActionCreators = (actionContainerMapArray, dispatch) => {
 
 // hnadle reducer action types due to creating nested objects
 export const handleActions = (initialState, reducerMap) => {
-  const createRejectionReducer = (subReducer) => (state, action) => {
+  const createRejectionReducer = subReducer => (state, action) => {
     try {
       return subReducer(state, action)
     } catch (e) {
@@ -47,7 +50,7 @@ export const handleActions = (initialState, reducerMap) => {
     }
   }
 
-  const createFulfillingReducer = (subReducer) => (state, action) => {
+  const createFulfillingReducer = subReducer => (state, action) => {
     try {
       return subReducer(state, action)
     } catch (e) {
@@ -60,17 +63,17 @@ export const handleActions = (initialState, reducerMap) => {
   for (const key in reducerMap) {
     const reducer = reducerMap[key]
 
-    if (key === 'undefined') {
-      throw new Error('action name can not be undefined')
+    if (key === "undefined") {
+      throw new Error("action name can not be undefined")
     }
 
-    if (typeof reducer === 'object') {
+    if (typeof reducer === "object") {
       for (const subKey in reducer) {
         const subReducer = reducer[subKey]
 
-        if (subKey === 'FULFILLED') {
+        if (subKey === "FULFILLED") {
           reducer[subKey] = createFulfillingReducer(subReducer)
-        } else if (subKey === 'REJECTED') {
+        } else if (subKey === "REJECTED") {
           reducer[subKey] = createRejectionReducer(subReducer)
         }
       }
@@ -80,9 +83,20 @@ export const handleActions = (initialState, reducerMap) => {
   return typeToReducer(reducerMap, initialState)
 }
 
-export const divideArray = (array, count) => {
+export const divideArray = array => {
+  const bestColumnSize = () => {
+    const padding = 0
+    const wd = window.outerWidth - padding
+    if (wd <= 600) {
+      return 1
+    } else if (wd <= 800) {
+      return 2
+    }
+    return 4
+  }
+  console.log(bestColumnSize(), window.outerWidth)
   // creating desired array
-  const arrays = new Array(count)
+  const arrays = new Array(bestColumnSize())
 
   // initiate array items
   for (let index = 0; index < arrays.length; index++) {
@@ -90,7 +104,7 @@ export const divideArray = (array, count) => {
     arrays[index].height = 0
     arrays[index].index = index
   }
-  
+
   const findBestColumn = () => {
     const min = minBy(arrays, _ => _.height)
     return min.index

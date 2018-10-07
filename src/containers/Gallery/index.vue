@@ -50,7 +50,7 @@ export default {
   methods : {
     mapStateToProps(state) {
       const gallery = { ...state.gallery }
-      this.galleryItems = divideArray(gallery.photos, 4)
+      this.galleryItems = divideArray(gallery.photos)
       return {
         gallery
       }

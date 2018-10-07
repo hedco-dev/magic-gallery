@@ -36,8 +36,8 @@ if (typeof window !== "undefined" && window.Vue) {
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media (max-width: 800px) {
       .column {
-        flex: 50%;
-        max-width: 50%;
+        flex: calc(50% - 8px);
+        max-width: calc(50% - 8px);
       }
     }
 
