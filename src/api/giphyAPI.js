@@ -1,5 +1,5 @@
-import { photo } from './apisURL'
-import axios from 'axios'
+import { photo } from "./apisURL"
+import axios from "axios"
 
 // All calls return promises.
 /**
@@ -8,11 +8,23 @@ import axios from 'axios'
  */
 class giphyAPI {
   static offset = -1
-  static getPhotos (limit) {
-    limit = limit || 5
+  static getPhotos(limit) {
+    limit = limit || 20
     return new Promise((resolve, reject) => {
-      axios.get(`${photo.get}${limit}&offset=${++giphyAPI.offset * limit}`)
-        .then(p => p.data.data)
+      axios
+        .get(`${photo.get}${limit}&offset=${++giphyAPI.offset * limit}`)
+        .then(_ => _.data.data)
+        .then(_ =>
+          _.map(__ => {
+            return {
+              id     : __.id,
+              title  : __.title,
+              url    : __.images.original_still.url,
+              width  : __.images.original_still.width,
+              height : __.images.original_still.height
+            }
+          })
+        )
         .then(resolve)
         .catch(reject)
     })
