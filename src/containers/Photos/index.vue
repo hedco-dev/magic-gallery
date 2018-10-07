@@ -17,14 +17,14 @@
             :title="photo.title">
             <img :src="photo.url">
           </a>
-          <ScrollHandler :handler="loadnewData"
-            :prevent-handle="scrollLoading">
-            <div class="more-photo-loading">
-              <img src="/static/images/loader.gif">
-              <strong>will see more photos...</strong>
-            </div>
-          </ScrollHandler>
         </section>
+        <ScrollHandler :handler="loadnewData"
+          :prevent-handle="scrollLoading">
+          <div class="more-photo-loading">
+            <img src="/static/images/loader.gif">
+            <strong>will see more photos...</strong>
+          </div>
+        </ScrollHandler>
         <section v-if="gallery.loading && gallery.photos.length===0"
           class="loading">
           <img src="/static/images/loader.gif">
