@@ -3,16 +3,16 @@ var config = require('../../config')
 
 // http://nightwatchjs.org/gettingstarted#settings-file
 module.exports = {
-  src_folders: ['test/e2e/specs'],
-  output_folder: 'test/e2e/reports',
+  src_folders           : ['test/e2e/specs'],
+  output_folder         : 'test/e2e/reports',
   custom_assertions_path: ['test/e2e/custom-assertions'],
 
   selenium: {
     start_process: true,
-    server_path: require('selenium-server').path,
-    host: '127.0.0.1',
-    port: 4444,
-    cli_args: {
+    server_path  : require('selenium-server').path,
+    host         : '127.0.0.1',
+    port         : 4444,
+    cli_args     : {
       'webdriver.chrome.driver': require('chromedriver').path
     }
   },
@@ -21,25 +21,25 @@ module.exports = {
     default: {
       selenium_port: 4444,
       selenium_host: 'localhost',
-      silent: true,
-      globals: {
+      silent       : true,
+      globals      : {
         devServerURL: 'http://localhost:' + (process.env.PORT || config.dev.port)
       }
     },
 
     chrome: {
       desiredCapabilities: {
-        browserName: 'chrome',
+        browserName      : 'chrome',
         javascriptEnabled: true,
-        acceptSslCerts: true
+        acceptSslCerts   : true
       }
     },
 
     firefox: {
       desiredCapabilities: {
-        browserName: 'firefox',
+        browserName      : 'firefox',
         javascriptEnabled: true,
-        acceptSslCerts: true
+        acceptSslCerts   : true
       }
     }
   }
