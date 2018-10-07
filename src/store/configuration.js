@@ -1,8 +1,8 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import reduxImmutableStateInvarient from 'redux-immutable-state-invariant'
-import promiseMiddleware from 'redux-promise-middleware'
-import thunk from 'redux-thunk'
-import reducers from '../reducers'
+import { createStore, applyMiddleware, compose } from "redux"
+import reduxImmutableStateInvarient from "redux-immutable-state-invariant"
+import promiseMiddleware from "redux-promise-middleware"
+import thunk from "redux-thunk"
+import reducers from "../reducers"
 
 /**
  * Redux store configuration function
@@ -12,7 +12,7 @@ import reducers from '../reducers'
  * @param {any} initialState
  * @returns
  */
-export const config = (initialState) => {
+export const config = initialState => {
   return createStore(
     reducers,
     initialState,
