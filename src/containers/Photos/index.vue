@@ -83,7 +83,7 @@ export default {
   })
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
   main {
     padding-top: 70px;
   }
@@ -97,6 +97,10 @@ export default {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(#a8eb00, #a8ebaa);
+
+    > img {
+      width: 40px;
+    }
   }
   #photos {
     /* Prevent vertical gaps */
@@ -104,15 +108,16 @@ export default {
     margin: 0 8px;
     column-count: 4;
     column-gap: 7px;
-  }
-  #photos img {
-    /* Just in case there are inline attributes */
-    width: 100% !important;
-    height: auto !important;
-    margin: 4px 0;
-    background: #ffffff;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+
+    img {
+      /* Just in case there are inline attributes */
+      width: 100% !important;
+      height: auto !important;
+      margin: 4px 0;
+      background: #ffffff;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
   }
 
   @media (max-width: 1200px) {
@@ -137,18 +142,16 @@ export default {
     }
   }
 
-  .loading > img {
-    width: 40px;
-  }
   .more-photo-loading {
     display: flex;
     margin: 10px 0;
     justify-content: center;
     align-items: center;
-  }
-  .more-photo-loading img {
-    width: 30px;
-    height: 30px;
-    margin-right: 6px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 6px;
+    }
   }
 </style>
