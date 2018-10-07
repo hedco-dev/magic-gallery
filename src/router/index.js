@@ -1,20 +1,21 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import { Gallery, Photo } from '@/containers'
+import Vue from "vue"
+import Router from "vue-router"
+import { Photo, Photos } from "@/containers"
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Gallery',
-      component: Gallery
+      path      : "/",
+      name      : "Photos",
+      component : Photos
     },
     {
-      path: '/photo/:id/:name',
-      name: 'Photo',
-      component: Photo
+      path      : "/photo/:id",
+      name      : "Photo",
+      component : Photo,
+      props     : true
     }
   ]
 })
