@@ -8,11 +8,10 @@ import axios from "axios"
  */
 class giphyAPI {
   static offset = -1
-  static getPhotos(limit) {
-    limit = limit || 20
+  static getPhotos(limit = 20, keyword) {
     return new Promise((resolve, reject) => {
       axios
-        .get(`${photo.get}${limit}&offset=${++giphyAPI.offset * limit}`)
+        .get(photo.get(keyword, limit, ++giphyAPI.offset * limit))
         .then(_ => _.data.data)
         .then(_ =>
           _.map(__ => {
