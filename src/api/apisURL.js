@@ -1,6 +1,5 @@
-import { giphy } from './apiKeys'
-export const giphyAPIBaseUrl = 'http://api.giphy.com/v1/'
+import { apiConfig } from "../config"
 
 export const photo = {
-  get: `${giphyAPIBaseUrl}gifs/search?q=ryan+gosling&api_key=${giphy}&limit=`
+  get: `${apiConfig.photoProviderUrl}${apiConfig.gifPath}&api_key=${apiConfig.apiKey}&limit=`
 }
