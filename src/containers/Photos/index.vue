@@ -43,7 +43,7 @@ import { Row, Header, ScrollHandler } from "../../components"
 
 export default {
   mixins  : [storeResolver],
-  name    : "Gallery",
+  name    : "Photos",
   methods : {
     mapStateToProps(state) {
       return {
