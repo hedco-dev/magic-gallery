@@ -1,4 +1,3 @@
-import { bindActionCreators as reduxBindActionCreators } from "redux"
 import typeToReducer from "type-to-reducer"
 import minBy from "lodash/minBy"
 export /**
@@ -13,29 +12,6 @@ const createActionTypeMap = (prefix, actionTypeArray) => {
     actionTypeMap[actionType] = `${prefix}_${actionType}`
   }
   return actionTypeMap
-}
-export const bindActionCreators = (actionContainerMapArray, dispatch) => {
-  const allActions = {}
-
-  if (!Array.isArray(actionContainerMapArray)) {
-    actionContainerMapArray = [actionContainerMapArray]
-  }
-
-  for (const actionContainerMap of actionContainerMapArray) {
-    for (const actionContainerName in actionContainerMap) {
-      const actionContainer = actionContainerMap[actionContainerName]
-
-      if (typeof allActions[actionContainerName] === "undefined") {
-        allActions[actionContainerName] = reduxBindActionCreators(
-          actionContainer,
-          dispatch
-        )
-      } else {
-        throw new Error(`Overlapping actions found: '${actionContainerName}'`)
-      }
-    }
-  }
-  return allActions
 }
 
 // hnadle reducer action types due to creating nested objects
@@ -83,27 +59,35 @@ export const handleActions = (initialState, reducerMap) => {
   return typeToReducer(reducerMap, initialState)
 }
 
-export const divideArray = (array, count) => {
+export /**
+ *
+ *
+ * @param {any} array of photos that we need to devide it for columns
+ * @param {any} count of creating chunk
+ * @returns
+ */
+const divideArray = (array, count) => {
   // creating desired array
   const arrays = new Array(count)
 
-  // initiate array items
+  // initiate base array items
   for (let index = 0; index < arrays.length; index++) {
     arrays[index] = []
     arrays[index].height = 0
     arrays[index].index = index
   }
 
-  const findBestColumn = () => {
+  // find the best column for be added
+  const findShortestColumn = () => {
     const min = minBy(arrays, _ => _.height)
     return min.index
   }
 
   for (let index = 0; index < array.length; index++) {
-    const availableIndex = findBestColumn()
+    const shortestColumn = findShortestColumn()
     const item = array[index]
-    arrays[availableIndex].height += Number(item.height) / Number(item.width)
-    arrays[availableIndex].push(item)
+    arrays[shortestColumn].height += Number(item.height) / Number(item.width)
+    arrays[shortestColumn].push(item)
   }
   return arrays
 }
