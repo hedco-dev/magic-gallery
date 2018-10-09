@@ -5,9 +5,8 @@ export const NODE_ENV = process.env.NODE_ENV
 export const apiConfig = {
   env: {
     development: {
-      photoProviderUrl : "http://api.giphy.com/v1/",
-      apiKey           : "TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3",
-      gifPath          : "gifs/search",
+      photoProviderUrl : "http://localhost:5000/",
+      gifPath          : "photos/search",
       defaultKeyword   : "movies",
       defaultLimit     : 10,
       defaultOffset    : 0
