@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/utils.js | magic-gallery</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Magic Photo Gallery"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="magic-gallery"><meta property="twitter:description" content="Magic Photo Gallery"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createActionTypeMap">createActionTypeMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-divideArray">divideArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-handleActions">handleActions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEFAULT_TITLE">DEFAULT_TITLE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-NODE_ENV">NODE_ENV</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-apiConfig">apiConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#actions-galleryaction">actions/galleryAction</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPhotos">getPhotos</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rerender">rerender</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#api">api</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-photo">photo</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-scrollhandler">components/ScrollHandler</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ScrollHandler">ScrollHandler</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#mixins">mixins</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-storeResolver">storeResolver</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store">store</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-config">config</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ROOT_STATE">ROOT_STATE</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/utils.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import typeToReducer from &quot;type-to-reducer&quot;
+import minBy from &quot;lodash/minBy&quot;
+export /**
+ * combile action type name to the more uniqe name
+ * @param {any} prefix
+ * @param {any} actionTypeArray
+ * @returns
+ */
+const createActionTypeMap = (prefix, actionTypeArray) =&gt; {
+  const actionTypeMap = {}
+  for (const actionType of actionTypeArray) {
+    actionTypeMap[actionType] = `${prefix}_${actionType}`
+  }
+  return actionTypeMap
+}
+
+// hnadle reducer action types due to creating nested objects
+export const handleActions = (initialState, reducerMap) =&gt; {
+  const createRejectionReducer = subReducer =&gt; (state, action) =&gt; {
+    try {
+      return subReducer(state, action)
+    } catch (e) {
+      setTimeout(() =&gt; {
+        throw e
+      })
+    }
+  }
+
+  const createFulfillingReducer = subReducer =&gt; (state, action) =&gt; {
+    try {
+      return subReducer(state, action)
+    } catch (e) {
+      setTimeout(() =&gt; {
+        throw e
+      })
+    }
+  }
+
+  for (const key in reducerMap) {
+    const reducer = reducerMap[key]
+
+    if (key === &quot;undefined&quot;) {
+      throw new Error(&quot;action name can not be undefined&quot;)
+    }
+
+    if (typeof reducer === &quot;object&quot;) {
+      for (const subKey in reducer) {
+        const subReducer = reducer[subKey]
+
+        if (subKey === &quot;FULFILLED&quot;) {
+          reducer[subKey] = createFulfillingReducer(subReducer)
+        } else if (subKey === &quot;REJECTED&quot;) {
+          reducer[subKey] = createRejectionReducer(subReducer)
+        }
+      }
+    }
+  }
+
+  return typeToReducer(reducerMap, initialState)
+}
+
+export /**
+ *
+ *
+ * @param {any} array of photos that we need to devide it for columns
+ * @param {any} count of creating chunk
+ * @returns
+ */
+const divideArray = (array, count) =&gt; {
+  // creating desired array
+  const arrays = new Array(count)
+
+  // initiate base array items
+  for (let index = 0; index &lt; arrays.length; index++) {
+    arrays[index] = []
+    arrays[index].height = 0
+    arrays[index].index = index
+  }
+
+  // find the best column for be added
+  const findShortestColumn = () =&gt; {
+    const min = minBy(arrays, _ =&gt; _.height)
+    return min.index
+  }
+
+  for (let index = 0; index &lt; array.length; index++) {
+    const shortestColumn = findShortestColumn()
+    const item = array[index]
+    arrays[shortestColumn].height += Number(item.height) / Number(item.width)
+    arrays[shortestColumn].push(item)
+  }
+  return arrays
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

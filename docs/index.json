@@ -1,0 +1,1237 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/actions/defaultActionTypes.js",
+    "content": "export default ['GET_PHOTOS']\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/actions/defaultActionTypes.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "src/actions/galleryAction/galleryActionType.js",
+    "content": "\nimport { createActionTypeMap } from '../../utils'\nimport defaultActionTypes from '../defaultActionTypes'\n\n// creatring specefic names for Gallery actions\nexport default createActionTypeMap('GALLARY', [\n  ...defaultActionTypes,\n  'RERENDER'\n])\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/actions/galleryAction/galleryActionType.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/actions/galleryAction/index.js",
+    "content": "import api from \"../../api/giphyAPI\"\nimport galleryActions from \"./galleryActionType\"\nconst { GET_PHOTOS, RERENDER } = galleryActions\n\nexport /**\n * an action to ftech photos from the API\n * @returns\n */\nconst getPhotos = limit => {\n  return {\n    type    : GET_PHOTOS,\n    payload : api.getPhotos(limit)\n  }\n}\n\nexport const rerender = () => {\n  return {\n    type: RERENDER\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/actions/galleryAction/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "GET_PHOTOS",
+    "memberof": "src/actions/galleryAction/index.js",
+    "static": true,
+    "longname": "src/actions/galleryAction/index.js~GET_PHOTOS",
+    "access": "public",
+    "export": false,
+    "importPath": "magic-gallery/src/actions/galleryAction/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "getPhotos",
+    "memberof": "src/actions/galleryAction/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/galleryAction/index.js~getPhotos",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/actions/galleryAction/index.js",
+    "importStyle": "{getPhotos}",
+    "description": "an action to ftech photos from the API",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "limit",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"type\": *, \"payload\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "rerender",
+    "memberof": "src/actions/galleryAction/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/galleryAction/index.js~rerender",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/actions/galleryAction/index.js",
+    "importStyle": "{rerender}",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "{\"type\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/actions/index.js",
+    "content": "import * as galleryAction from './galleryAction'\n\nexport {\n  galleryAction\n}\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/actions/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/api/apisURL.js",
+    "content": "import { apiConfig, NODE_ENV } from \"../config\"\nconst config = apiConfig.env[NODE_ENV]\n\nexport const photo = {\n  get(keyword, limit = config.defaultLimit, offset = config.defaultOffset) {\n    if (!keyword) {\n      keyword = config.defaultKeyword\n    }\n    let url = `${config.photoProviderUrl}${config.gifPath}?api_key=${\n      config.apiKey\n    }&q=${keyword}&limit=${limit}&offset=${offset}`\n\n    return url\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/api/apisURL.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "src/api/apisURL.js",
+    "static": true,
+    "longname": "src/api/apisURL.js~config",
+    "access": "public",
+    "export": false,
+    "importPath": "magic-gallery/src/api/apisURL.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "photo",
+    "memberof": "src/api/apisURL.js",
+    "static": true,
+    "longname": "src/api/apisURL.js~photo",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/api/apisURL.js",
+    "importStyle": "{photo}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"get\": function}"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "src/components/ScrollHandler/index.js",
+    "content": "import inViewport from \"element-in-view\"\nimport throttle from \"throttleit\"\n\nconst triggers = [\"scroll\", \"resize\"]\n\nexport /**\n * ScrollHandler handle scrolling of the body and let the user know about it\n *\n * @prop {any} handler is a prop for ScrollHandler to call when scrolling happens\n * @prop {any} preventHandle is a prop for ScrollHandler to handle calling hanlder\n * @returns\n */\nconst ScrollHandler = {\n  name  : \"ScrollHandler\",\n  props : {\n    handler: {\n      type     : Function,\n      required : true\n    },\n    preventHandle: {\n      type    : Boolean,\n      default : true\n    }\n  },\n  mounted() {\n    this.checkInView()\n  },\n  methods: {\n    checkInView() {\n      const execute = () => {\n        const inView = inViewport(this.$refs.scroll, { threshold: 0 })\n        if (!this.preventHandle && inView) {\n          this.handler()\n        }\n      }\n\n      execute()\n\n      // Add event listeners\n      this.check = throttle(execute, 200)\n      triggers.forEach(event => window.addEventListener(event, this.check))\n    }\n  },\n  render(h) {\n    return h(\n      \"footer\",\n      {\n        ref: \"scroll\"\n      },\n      this.$slots.default\n    )\n  },\n  beforeDestroy() {\n    triggers.forEach(event => window.removeEventListener(event, this.check))\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/components/ScrollHandler/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "triggers",
+    "memberof": "src/components/ScrollHandler/index.js",
+    "static": true,
+    "longname": "src/components/ScrollHandler/index.js~triggers",
+    "access": "public",
+    "export": false,
+    "importPath": "magic-gallery/src/components/ScrollHandler/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "ScrollHandler",
+    "memberof": "src/components/ScrollHandler/index.js",
+    "static": true,
+    "longname": "src/components/ScrollHandler/index.js~ScrollHandler",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/components/ScrollHandler/index.js",
+    "importStyle": "{ScrollHandler}",
+    "description": "ScrollHandler handle scrolling of the body and let the user know about it",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@prop",
+        "tagValue": "{any} handler is a prop for ScrollHandler to call when scrolling happens"
+      },
+      {
+        "tagName": "@prop",
+        "tagValue": "{any} preventHandle is a prop for ScrollHandler to handle calling hanlder"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": ""
+      }
+    ],
+    "type": {
+      "types": [
+        "{\"name\": string, \"props\": *, \"mounted\": function, \"methods\": *, \"render\": function, \"beforeDestroy\": function}"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/components/index.js",
+    "content": "export { default as Header } from './Header'\nexport { default as Row } from './Layouts/Row'\nexport { default as Column } from './Layouts/Column'\nexport * from './ScrollHandler'\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/components/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/config.js",
+    "content": "export const NODE_ENV = process.env.NODE_ENV\n\nexport const apiConfig = {\n  env: {\n    development: {\n      photoProviderUrl : \"http://api.giphy.com/v1/\",\n      apiKey           : \"TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3\",\n      gifPath          : \"gifs/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    },\n    development2: {\n      photoProviderUrl : \"http://api.giphy.com/v1/\",\n      apiKey           : \"TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3\",\n      gifPath          : \"gifs/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    },\n    production: {\n      photoProviderUrl : \"http://api.giphy.com/v1/\",\n      apiKey           : \"TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3\",\n      gifPath          : \"gifs/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    }\n  }\n}\n\nexport const DEFAULT_TITLE = \"Magic Gallery\"\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/config.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "NODE_ENV",
+    "memberof": "src/config.js",
+    "static": true,
+    "longname": "src/config.js~NODE_ENV",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/config.js",
+    "importStyle": "{NODE_ENV}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "apiConfig",
+    "memberof": "src/config.js",
+    "static": true,
+    "longname": "src/config.js~apiConfig",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/config.js",
+    "importStyle": "{apiConfig}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"env\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "DEFAULT_TITLE",
+    "memberof": "src/config.js",
+    "static": true,
+    "longname": "src/config.js~DEFAULT_TITLE",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/config.js",
+    "importStyle": "{DEFAULT_TITLE}",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/containers/index.js",
+    "content": "export { default as Gallery } from './Gallery'\nexport { default as Photo } from './Photo'\nexport { default as Photos } from './Photos'\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/containers/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/main.js",
+    "content": "// The Vue build version to load with the `import` command\n// (runtime-only or standalone) has been set in webpack.base.conf with an alias.\nimport Vue from \"vue\"\nimport App from \"./App\"\nimport router from \"./router\"\n\nVue.config.productionTip = false\n\nnew Vue({\n  el         : \"#app\",\n  router,\n  components : { App },\n  template   : \"<App/>\"\n})\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/main.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/mixins/index.js",
+    "content": "export * from './storeResolver'\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/mixins/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/mixins/storeResolver.js",
+    "content": "import { config as configStore } from \"../store/configuration\"\nconst store = configStore()\n\n// a mixin to config and propose the main state of application\nexport const storeResolver = {\n  data() {\n    return {\n      store\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/mixins/storeResolver.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "store",
+    "memberof": "src/mixins/storeResolver.js",
+    "static": true,
+    "longname": "src/mixins/storeResolver.js~store",
+    "access": "public",
+    "export": false,
+    "importPath": "magic-gallery/src/mixins/storeResolver.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "variable",
+    "name": "storeResolver",
+    "memberof": "src/mixins/storeResolver.js",
+    "static": true,
+    "longname": "src/mixins/storeResolver.js~storeResolver",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/mixins/storeResolver.js",
+    "importStyle": "{storeResolver}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"data\": function}"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/reducers/index.js",
+    "content": "import { combineReducers } from \"redux\"\nimport gallery from \"./galleryReducer\"\n\nexport default combineReducers({\n  gallery\n})\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/reducers/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "src/router/index.js",
+    "content": "import Vue from \"vue\"\nimport Router from \"vue-router\"\nimport { Photo, Photos, Gallery } from \"@/containers\"\nimport { NODE_ENV, DEFAULT_TITLE } from \"../config\"\nVue.use(Router)\n\n// configure router based on configuration\nexport default new Router({\n  routes: [\n    {\n      path : \"/\",\n      name : \"Photos\",\n      meta : {\n        title: () => DEFAULT_TITLE\n      },\n      component: NODE_ENV === \"development2\" ? Photos : Gallery\n    },\n    {\n      path      : \"/photo/:id/:title?\",\n      name      : \"Photo\",\n      component : Photo,\n      meta      : {\n        title: (to) => `${to.params.title}'s Photo`\n      },\n      props: true\n    }\n  ]\n})\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/router/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/store/configuration.js",
+    "content": "import { createStore, applyMiddleware, compose } from \"redux\"\nimport reduxImmutableStateInvarient from \"redux-immutable-state-invariant\"\nimport promiseMiddleware from \"redux-promise-middleware\"\nimport thunk from \"redux-thunk\"\nimport reducers from \"../reducers\"\n\n/**\n * Redux store configuration function\n * using thunk, promiseMiddleware as middlewares to deal with data\n * using routerMiddleware to manage route in Redux\n * @export\n * @param {any} initialState\n * @returns\n */\nexport const config = initialState => {\n  return createStore(\n    reducers,\n    initialState,\n    compose(\n      applyMiddleware(\n        thunk,\n        promiseMiddleware(),\n        reduxImmutableStateInvarient()\n      )\n    )\n  )\n}\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/store/configuration.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "config",
+    "memberof": "src/store/configuration.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/store/configuration.js~config",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/store/configuration.js",
+    "importStyle": "{config}",
+    "description": "Redux store configuration function\nusing thunk, promiseMiddleware as middlewares to deal with data\nusing routerMiddleware to manage route in Redux",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "initialState",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/store/index.js",
+    "content": "// initiate stete of gallery\nexport const ROOT_STATE = {\n  photos  : [],\n  loading : false,\n  error   : undefined\n}\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/store/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "ROOT_STATE",
+    "memberof": "src/store/index.js",
+    "static": true,
+    "longname": "src/store/index.js~ROOT_STATE",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/store/index.js",
+    "importStyle": "{ROOT_STATE}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"photos\": *, \"loading\": *, \"error\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/utils.js",
+    "content": "import typeToReducer from \"type-to-reducer\"\nimport minBy from \"lodash/minBy\"\nexport /**\n * combile action type name to the more uniqe name\n * @param {any} prefix\n * @param {any} actionTypeArray\n * @returns\n */\nconst createActionTypeMap = (prefix, actionTypeArray) => {\n  const actionTypeMap = {}\n  for (const actionType of actionTypeArray) {\n    actionTypeMap[actionType] = `${prefix}_${actionType}`\n  }\n  return actionTypeMap\n}\n\n// hnadle reducer action types due to creating nested objects\nexport const handleActions = (initialState, reducerMap) => {\n  const createRejectionReducer = subReducer => (state, action) => {\n    try {\n      return subReducer(state, action)\n    } catch (e) {\n      setTimeout(() => {\n        throw e\n      })\n    }\n  }\n\n  const createFulfillingReducer = subReducer => (state, action) => {\n    try {\n      return subReducer(state, action)\n    } catch (e) {\n      setTimeout(() => {\n        throw e\n      })\n    }\n  }\n\n  for (const key in reducerMap) {\n    const reducer = reducerMap[key]\n\n    if (key === \"undefined\") {\n      throw new Error(\"action name can not be undefined\")\n    }\n\n    if (typeof reducer === \"object\") {\n      for (const subKey in reducer) {\n        const subReducer = reducer[subKey]\n\n        if (subKey === \"FULFILLED\") {\n          reducer[subKey] = createFulfillingReducer(subReducer)\n        } else if (subKey === \"REJECTED\") {\n          reducer[subKey] = createRejectionReducer(subReducer)\n        }\n      }\n    }\n  }\n\n  return typeToReducer(reducerMap, initialState)\n}\n\nexport /**\n *\n *\n * @param {any} array of photos that we need to devide it for columns\n * @param {any} count of creating chunk\n * @returns\n */\nconst divideArray = (array, count) => {\n  // creating desired array\n  const arrays = new Array(count)\n\n  // initiate base array items\n  for (let index = 0; index < arrays.length; index++) {\n    arrays[index] = []\n    arrays[index].height = 0\n    arrays[index].index = index\n  }\n\n  // find the best column for be added\n  const findShortestColumn = () => {\n    const min = minBy(arrays, _ => _.height)\n    return min.index\n  }\n\n  for (let index = 0; index < array.length; index++) {\n    const shortestColumn = findShortestColumn()\n    const item = array[index]\n    arrays[shortestColumn].height += Number(item.height) / Number(item.width)\n    arrays[shortestColumn].push(item)\n  }\n  return arrays\n}\n",
+    "static": true,
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/src/utils.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "createActionTypeMap",
+    "memberof": "src/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils.js~createActionTypeMap",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/utils.js",
+    "importStyle": "{createActionTypeMap}",
+    "description": "combile action type name to the more uniqe name",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "prefix",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "actionTypeArray",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "handleActions",
+    "memberof": "src/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils.js~handleActions",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/utils.js",
+    "importStyle": "{handleActions}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "initialState",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "reducerMap",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "function",
+    "name": "divideArray",
+    "memberof": "src/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils.js~divideArray",
+    "access": "public",
+    "export": true,
+    "importPath": "magic-gallery/src/utils.js",
+    "importStyle": "{divideArray}",
+    "description": "",
+    "lineNumber": 69,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "of photos that we need to devide it for columns"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "count",
+        "description": "of creating chunk"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# magic-gallery\n\n> A Vue.js project\n\n## Build Setup\n\n``` bash\n# install dependencies\nnpm install\n\n# serve with hot reload at localhost:8080\nnpm run dev\n\n# build for production with minification\nnpm run build\n\n# build for production and view the bundle analyzer report\nnpm run build --report\n\n# run unit tests\nnpm run unit\n\n# run e2e tests\nnpm run e2e\n\n# run all tests\nnpm test\n```\n\nFor a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).\n",
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"magic-gallery\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Magic Photo Gallery\",\n  \"author\": \"Majid Parvin <parvin.majid@hedcoint.com>\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"webpack-dashboard -- webpack-dev-server --inline --progress --config build/webpack.dev.conf.js\",\n    \"dev2\": \"webpack-dev-server --inline --progress --config build/webpack.dev.2.conf.js\",\n    \"start\": \"npm run dev\",\n    \"unit\": \"jest --config test/unit/jest.conf.js --coverage\",\n    \"e2e\": \"node test/e2e/runner.js\",\n    \"test\": \"npm run unit && npm run e2e\",\n    \"lint\": \"eslint --ext .js,.vue src/\",\n    \"build\": \"node build/build.js\",\n    \"doc\": \"esdoc -c esdoc.json\"\n  },\n  \"dependencies\": {\n    \"axios\": \"^0.18.0\",\n    \"element-in-view\": \"^0.1.0\",\n    \"redux\": \"^4.0.0\",\n    \"redux-immutable-state-invariant\": \"^2.1.0\",\n    \"redux-promise-middleware\": \"^5.1.1\",\n    \"redux-thunk\": \"^2.3.0\",\n    \"throttleit\": \"^1.0.0\",\n    \"type-to-reducer\": \"^1.1.0\",\n    \"vue\": \"^2.5.2\",\n    \"vue-router\": \"^3.0.1\",\n    \"vuejs-redux\": \"^2.2.0\"\n  },\n  \"devDependencies\": {\n    \"autoprefixer\": \"^7.1.2\",\n    \"babel-core\": \"^6.22.1\",\n    \"babel-eslint\": \"^7.2.3\",\n    \"babel-helper-vue-jsx-merge-props\": \"^2.0.3\",\n    \"babel-jest\": \"^21.0.2\",\n    \"babel-loader\": \"^7.1.1\",\n    \"babel-plugin-dynamic-import-node\": \"^1.2.0\",\n    \"babel-plugin-syntax-jsx\": \"^6.18.0\",\n    \"babel-plugin-transform-es2015-modules-commonjs\": \"^6.26.0\",\n    \"babel-plugin-transform-runtime\": \"^6.22.0\",\n    \"babel-plugin-transform-vue-jsx\": \"^3.5.0\",\n    \"babel-preset-env\": \"^1.3.2\",\n    \"babel-preset-stage-2\": \"^6.22.0\",\n    \"babel-register\": \"^6.22.0\",\n    \"chalk\": \"^2.0.1\",\n    \"chromedriver\": \"^2.27.2\",\n    \"copy-webpack-plugin\": \"^4.0.1\",\n    \"cross-spawn\": \"^5.0.1\",\n    \"css-loader\": \"^0.28.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"esdoc-vue-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.15.0\",\n    \"eslint-config-standard\": \"^10.2.1\",\n    \"eslint-friendly-formatter\": \"^3.0.0\",\n    \"eslint-loader\": \"^1.7.1\",\n    \"eslint-plugin-import\": \"^2.7.0\",\n    \"eslint-plugin-node\": \"^5.2.0\",\n    \"eslint-plugin-promise\": \"^3.4.0\",\n    \"eslint-plugin-standard\": \"^3.0.1\",\n    \"eslint-plugin-vue\": \"^4.7.1\",\n    \"extract-text-webpack-plugin\": \"^3.0.0\",\n    \"file-loader\": \"^1.1.4\",\n    \"friendly-errors-webpack-plugin\": \"^1.6.1\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"jest\": \"^22.0.4\",\n    \"jest-serializer-vue\": \"^0.3.0\",\n    \"nightwatch\": \"^0.9.12\",\n    \"node-notifier\": \"^5.1.2\",\n    \"node-sass\": \"^4.9.3\",\n    \"optimize-css-assets-webpack-plugin\": \"^3.2.0\",\n    \"ora\": \"^1.2.0\",\n    \"portfinder\": \"^1.0.13\",\n    \"postcss-import\": \"^11.0.0\",\n    \"postcss-loader\": \"^2.0.8\",\n    \"postcss-url\": \"^7.2.1\",\n    \"rimraf\": \"^2.6.0\",\n    \"sass-loader\": \"^7.1.0\",\n    \"selenium-server\": \"^3.0.1\",\n    \"semver\": \"^5.3.0\",\n    \"shelljs\": \"^0.7.6\",\n    \"uglifyjs-webpack-plugin\": \"^1.1.1\",\n    \"url-loader\": \"^0.5.8\",\n    \"vue-jest\": \"^1.0.2\",\n    \"vue-loader\": \"^13.3.0\",\n    \"vue-style-loader\": \"^3.0.1\",\n    \"vue-template-compiler\": \"^2.5.2\",\n    \"webpack\": \"^3.6.0\",\n    \"webpack-bundle-analyzer\": \"^2.9.0\",\n    \"webpack-dashboard\": \"^2.0.0\",\n    \"webpack-dev-server\": \"^2.9.1\",\n    \"webpack-merge\": \"^4.1.0\"\n  },\n  \"engines\": {\n    \"node\": \">= 6.0.0\",\n    \"npm\": \">= 3.0.0\"\n  },\n  \"browserslist\": [\n    \"> 1%\",\n    \"last 2 versions\",\n    \"not ie <= 8\"\n  ]\n}\n",
+    "longname": "/Users/majidparvin/Source/github/magic-gallery/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

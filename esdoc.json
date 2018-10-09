@@ -1,0 +1,8 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "plugins": [
+    { "name": "esdoc-vue-plugin" },
+    { "name": "esdoc-standard-plugin" }
+  ]
+}
