@@ -1,5 +1,7 @@
+// resolving the current Node environment
 export const NODE_ENV = process.env.NODE_ENV
 
+// resolving the api configuration based on node environemnt
 export const apiConfig = {
   env: {
     development: {
@@ -29,4 +31,5 @@ export const apiConfig = {
   }
 }
 
+// resloving the defsult name of pages
 export const DEFAULT_TITLE = "Magic Gallery"
