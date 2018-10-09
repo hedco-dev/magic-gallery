@@ -6,6 +6,10 @@
 
 ![Redux Data Flow](https://raw.githubusercontent.com/hedco-dev/magic-gallery/master/images/redux.jpg "Redux Data Flow")
 
+## Prerequisites
+Developed on the Node v10.10.0 and npm v6.2.0
+
+
 ## Build Setup
 
 ``` bash
