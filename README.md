@@ -4,7 +4,7 @@
 
 ## Redux data flow in the project
 
-![Redux Data Flow](https://raw.githubusercontent.com/hedco-dev/magic-gallery/master/images/redux.png "Redux Data Flow")
+![Redux Data Flow](https://raw.githubusercontent.com/hedco-dev/magic-gallery/master/images/redux.jpg "Redux Data Flow")
 
 ## Build Setup
 
