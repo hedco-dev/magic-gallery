@@ -65,7 +65,7 @@ export default {
     },
 
     genenrateImageUrl(photo) {
-      return `/#/photo/${photo.id}`
+      return `/#/photo/${photo.id}/${photo.title}`
     }
   },
 

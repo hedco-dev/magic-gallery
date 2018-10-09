@@ -28,3 +28,5 @@ export const apiConfig = {
     }
   }
 }
+
+export const DEFAULT_TITLE = "Magic Gallery"

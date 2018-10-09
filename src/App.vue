@@ -5,8 +5,15 @@
 </template>
 
 <script>
+import { DEFAULT_TITLE } from "./config"
+
 export default {
-  name: "App"
+  name  : "App",
+  watch : {
+    $route(to, from) {
+      document.title = `${DEFAULT_TITLE}: ${to.meta.title(to)}`
+    }
+  }
 }
 </script>
 <style>

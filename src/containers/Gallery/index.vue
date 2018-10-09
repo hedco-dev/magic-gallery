@@ -83,7 +83,7 @@ export default {
       this.scrollLoading = false
     },
     genenrateImageUrl(photo) {
-      return `/#/photo/${photo.id}`
+      return `/#/photo/${photo.id}/${photo.title}`
     }
   },
   mounted() {
