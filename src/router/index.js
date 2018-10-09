@@ -4,6 +4,7 @@ import { Photo, Photos, Gallery } from "@/containers"
 import { NODE_ENV } from "../config"
 Vue.use(Router)
 
+// configure router based on configuration
 export default new Router({
   routes: [
     {
