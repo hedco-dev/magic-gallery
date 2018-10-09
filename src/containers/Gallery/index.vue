@@ -48,6 +48,7 @@ export default {
   mixins  : [storeResolver],
   name    : "Gallery",
   methods : {
+    // redux mapStateToProps
     mapStateToProps(state) {
       this.bestColumnSize = () => {
         const padding = 0
@@ -59,12 +60,12 @@ export default {
         }
         return 4
       }
-      this.photos = state.gallery.photos
-      this.galleryItems = divideArray(this.photos, this.bestColumnSize())
+      this.galleryItems = divideArray(state.gallery.photos, this.bestColumnSize())
       return {
         gallery: state.gallery
       }
     },
+    // redux mapDispatchToProps
     mapDispatchToProps(dispatch) {
       const actions = bindActionCreators(galleryAction, dispatch)
       this.actions = actions
@@ -72,21 +73,25 @@ export default {
         actions
       }
     },
+    // a handler for rezing to making columns
     handleResizing() {
       const self = this
       clearTimeout(this.resizeingTId)
       this.resizeingTId = setTimeout(() => self.actions.rerender(), 600)
     },
+    // a handler for scrolling
     loadnewData() {
-      this.scrollLoading = true
+      this.scrollLoading = true // to avoiding extra calling of handler
       this.actions.getPhotos(this.pageSize)
       this.scrollLoading = false
     },
+    // creating a specefic url for each photo
     genenrateImageUrl(photo) {
       return `/#/photo/${photo.id}/${photo.title}`
     }
   },
   mounted() {
+    // bind resize event
     window.addEventListener("resize", this.handleResizing)
   },
   components: {
@@ -103,6 +108,7 @@ export default {
     resizeingTId  : -1
   }),
   beforeDestroy() {
+    // unbind resize event
     window.removeEventListener("resize", this.handleResizing)
   }
 }
