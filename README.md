@@ -11,11 +11,17 @@
 ``` bash
 # install dependencies
 npm install
+```
 
-# serve with hot reload at localhost:8080, you must first run the data provider project on https://github.com/hedco-dev/Magic-Photo-Provider on port 5000 and use a smart way to render items in the gallery.
+### serve with hot reload at localhost:8080, you must first run the on [data provider project](https://github.com/hedco-dev/Magic-Photo-Provider) on port 5000 and also use a smart way to render items in the gallery.
+
+``` bash
 npm start
+```
 
-# serve with hot reload at localhost:8080, it does not need to use local data provider and call target API directly and also have so simple way to render items in gallery.
+### serve with hot reload at localhost:8080, it does not need to use local data provider and call target API directly and also has a so simple way to render items in gallery.
+
+``` bash
 npm run dev2
 
 # build for production with minification
