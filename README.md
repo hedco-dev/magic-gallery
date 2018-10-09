@@ -1,4 +1,4 @@
-# Magic Gllery
+# Magic Gallery
 
 > A Vue.js/Redux project
 
