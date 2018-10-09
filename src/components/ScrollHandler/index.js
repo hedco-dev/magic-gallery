@@ -3,7 +3,14 @@ import throttle from "throttleit"
 
 const triggers = ["scroll", "resize"]
 
-export const ScrollHandler = {
+export /**
+ * ScrollHandler handle scrolling of the body and let the user know about it
+ *
+ * @prop {any} handler is a prop for ScrollHandler to call when scrolling happens
+ * @prop {any} preventHandle is a prop for ScrollHandler to handle calling hanlder
+ * @returns
+ */
+const ScrollHandler = {
   name  : "ScrollHandler",
   props : {
     handler: {
@@ -46,8 +53,4 @@ export const ScrollHandler = {
   beforeDestroy() {
     triggers.forEach(event => window.removeEventListener(event, this.check))
   }
-}
-
-if (typeof window !== "undefined" && window.Vue) {
-  window.Vue.component(ScrollHandler.name, ScrollHandler)
 }

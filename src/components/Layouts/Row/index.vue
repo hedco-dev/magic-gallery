@@ -9,14 +9,11 @@ const Row = {
   name: "Row"
 }
 export default Row
-
-if (typeof window !== "undefined" && window.Vue) {
-  window.Vue.component(Row.name, Row)
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+ /* Create row as container of columns */
   .row {
     display: flex;
     flex-wrap: wrap;

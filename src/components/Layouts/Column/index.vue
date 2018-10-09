@@ -10,9 +10,6 @@ const Column = {
 }
 export default Column
 
-if (typeof window !== "undefined" && window.Vue) {
-  window.Vue.component(Column.name, Column)
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
