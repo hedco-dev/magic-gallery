@@ -1,7 +1,7 @@
 import Vue from "vue"
 import Router from "vue-router"
 import { Photo, Photos, Gallery } from "@/containers"
-
+import { NODE_ENV } from "../config"
 Vue.use(Router)
 
 export default new Router({
@@ -9,12 +9,7 @@ export default new Router({
     {
       path      : "/",
       name      : "Photos",
-      component : Photos
-    },
-    {
-      path      : "/gallery",
-      name      : "Gallery",
-      component : Gallery
+      component : NODE_ENV === "development2" ? Photos : Gallery
     },
     {
       path      : "/photo/:id",
