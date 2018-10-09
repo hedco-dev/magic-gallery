@@ -5,24 +5,24 @@
     <template slot-scope="{gallery}">
       <main>
         <Header>
-          <a href="#/">
+          <a href="#/" title="back to the gallery">
             <img src="/static/images/return.svg" />
           </a>
         </Header>
         <section class="main">
           <div class="main-image-container">
-            <img :src="actionPhotos.photo.url" />
+            <img :src="actionPhotos.photo.url" :title="actionPhotos.photo.title" />
           </div>
           <div class="action-container">
             <div class="image-box">
               <a v-if="actionPhotos.prevPhoto"
                 href="#"
                 @click="changeImage($event, actionPhotos.prevPhoto.id)">
-                <img :src="actionPhotos.prevPhoto.url" />
+                <img :src="actionPhotos.prevPhoto.url" :title="actionPhotos.prevPhoto.title" />
               </a>
             </div>
             <div class="return">
-              <a href="#/">
+              <a href="#/" title="back to the gallery">
                 <img src="/static/images/close.svg" />
               </a>
             </div>
@@ -30,7 +30,7 @@
               <a v-if="actionPhotos.nextPhoto"
                 href="#"
                 @click="changeImage($event, actionPhotos.nextPhoto.id)">
-                <img :src="actionPhotos.nextPhoto.url" />
+                <img :src="actionPhotos.nextPhoto.url" :title="actionPhotos.nextPhoto.title" />
               </a>
             </div>
           </div>
