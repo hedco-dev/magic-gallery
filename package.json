@@ -12,7 +12,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src/",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "doc": "esdoc -c esdoc.json"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -47,6 +48,9 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "esdoc-vue-plugin": "^1.0.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
