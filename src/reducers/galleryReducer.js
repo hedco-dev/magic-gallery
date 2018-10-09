@@ -6,6 +6,7 @@ const { GET_PHOTOS, RERENDER } = galleryActionType
 // reducer for gallery actions
 const reducers = {
   [GET_PHOTOS]: {
+    // before the promise response the request
     PENDING: state => {
       return {
         ...state,
@@ -13,6 +14,7 @@ const reducers = {
         error   : undefined
       }
     },
+    // call after resolving the promise
     FULFILLED: (state, action) => {
       return {
         ...state,
@@ -20,6 +22,7 @@ const reducers = {
         loading : false
       }
     },
+    // call after catching the promise
     REJECTED: (state, action) => {
       return {
         ...state,
