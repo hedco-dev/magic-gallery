@@ -2,7 +2,7 @@
   <Provider :mapDispatchToProps="mapDispatchToProps"
     :mapStateToProps="mapStateToProps"
     :store="store">
-    <template slot-scope="{gallery, actions}">
+    <template slot-scope="{gallery}">
       <main>
         <Header>
           <a href="#/">
@@ -41,9 +41,7 @@
 </template>
 
 <script>
-import { bindActionCreators } from "redux"
 import Provider from "vuejs-redux"
-import { galleryAction } from "../../actions"
 import { storeResolver } from "../../mixins"
 import { Row, Header } from "../../components"
 import findIndex from "lodash/findIndex"
@@ -68,10 +66,7 @@ export default {
       }
     },
     mapDispatchToProps(dispatch) {
-      const actions = bindActionCreators(galleryAction, dispatch)
-      this.actions = actions
       return {
-        actions
       }
     },
 
