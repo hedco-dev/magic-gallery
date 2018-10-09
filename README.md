@@ -16,12 +16,14 @@ npm install
 #### use the below command to serve with hot reload at localhost:8080, you must first run the on [data provider project](https://github.com/hedco-dev/Magic-Photo-Provider) on port 5000 and also use a smart way to render items in the gallery.
 
 ``` bash
+# serve at localhost:8080 and call localhost:5000 to resolving api
 npm start
 ```
 
 #### use the below command to serve with hot reload at localhost:8080, it does not need to use local data provider and call target API directly and also has a so simple way to render items in gallery.
 
 ``` bash
+# serve at localhost:8080 and giphy.com api directly
 npm run dev2
 ```
 #### the other commands
