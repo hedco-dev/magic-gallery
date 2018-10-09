@@ -13,31 +13,29 @@
 npm install
 ```
 
-### serve with hot reload at localhost:8080, you must first run the on [data provider project](https://github.com/hedco-dev/Magic-Photo-Provider) on port 5000 and also use a smart way to render items in the gallery.
+#### use the below command to serve with hot reload at localhost:8080, you must first run the on [data provider project](https://github.com/hedco-dev/Magic-Photo-Provider) on port 5000 and also use a smart way to render items in the gallery.
 
 ``` bash
 npm start
 ```
 
-### serve with hot reload at localhost:8080, it does not need to use local data provider and call target API directly and also has a so simple way to render items in gallery.
+#### use the below command to serve with hot reload at localhost:8080, it does not need to use local data provider and call target API directly and also has a so simple way to render items in gallery.
 
 ``` bash
 npm run dev2
+```
+#### the other commands
 
+``` bash
 # build for production with minification
 npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
 
-# run unit tests
-npm run unit
-
 # run doc to regenerate documentation 
 npm run doc
 
-# run all tests
-npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

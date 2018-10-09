@@ -690,7 +690,7 @@
     "__docId__": 55,
     "kind": "file",
     "name": "src/api/apisURL.js",
-    "content": "import { apiConfig, NODE_ENV } from \"../config\"\n// handle the config from current env\nconst config = apiConfig.env[NODE_ENV]\n\n// making photo api url based on config and the parametters\nexport const photo = {\n  /**\n   * \n   * \n   * @param {any} keyword for saerch in the target API\n   * @param {any} [limit=config.defaultLimit] limitation of how many items fetch from a API call\n   * @param {any} [offset=config.defaultOffset] skiping of the data in the storage queue\n   * @returns \n   */\n  get(keyword, limit = config.defaultLimit, offset = config.defaultOffset) {\n    if (!keyword) {\n      keyword = config.defaultKeyword\n    }\n    let url = `${config.photoProviderUrl}${config.gifPath}?api_key=${\n      config.apiKey\n    }&q=${keyword}&limit=${limit}&offset=${offset}`\n\n    return url\n  }\n}\n",
+    "content": "import { apiConfig, NODE_ENV } from \"../config\"\n// handle the config from current env\nconst config = apiConfig.env[NODE_ENV]\n\n// making photo api url based on config and the parametters\nexport const photo = {\n  /**\n   *\n   *\n   * @param {any} keyword for saerch in the target API\n   * @param {any} [limit=config.defaultLimit] limitation of how many items fetch from a API call\n   * @param {any} [offset=config.defaultOffset] skiping of the data in the storage queue\n   * @returns\n   */\n  get(keyword, limit = config.defaultLimit, offset = config.defaultOffset) {\n    if (!keyword) {\n      keyword = config.defaultKeyword\n    }\n    let url = \"\"\n    if (NODE_ENV === \"development\") {\n      url = `${config.photoProviderUrl}${config.gifPath}/${limit}/${offset}?keyword=${keyword}`\n    } else {\n      url = `${config.photoProviderUrl}${config.gifPath}?api_key=${\n        config.apiKey\n      }&q=${keyword}&limit=${limit}&offset=${offset}`\n    }\n    return url\n  }\n}\n",
     "static": true,
     "longname": "/Users/majidparvin/Source/github/magic-gallery/src/api/apisURL.js",
     "access": "public",
@@ -818,7 +818,7 @@
     "__docId__": 62,
     "kind": "file",
     "name": "src/config.js",
-    "content": "// resolving the current Node environment\nexport const NODE_ENV = process.env.NODE_ENV\n\n// resolving the api configuration based on node environemnt\nexport const apiConfig = {\n  env: {\n    development: {\n      photoProviderUrl : \"http://api.giphy.com/v1/\",\n      apiKey           : \"TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3\",\n      gifPath          : \"gifs/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    },\n    development2: {\n      photoProviderUrl : \"http://api.giphy.com/v1/\",\n      apiKey           : \"TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3\",\n      gifPath          : \"gifs/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    },\n    production: {\n      photoProviderUrl : \"http://api.giphy.com/v1/\",\n      apiKey           : \"TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3\",\n      gifPath          : \"gifs/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    }\n  }\n}\n\n// resloving the defsult name of pages\nexport const DEFAULT_TITLE = \"Magic Gallery\"\n",
+    "content": "// resolving the current Node environment\nexport const NODE_ENV = process.env.NODE_ENV\n\n// resolving the api configuration based on node environemnt\nexport const apiConfig = {\n  env: {\n    development: {\n      photoProviderUrl : \"http://localhost:5000/\",\n      gifPath          : \"photos/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    },\n    development2: {\n      photoProviderUrl : \"http://api.giphy.com/v1/\",\n      apiKey           : \"TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3\",\n      gifPath          : \"gifs/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    },\n    production: {\n      photoProviderUrl : \"http://api.giphy.com/v1/\",\n      apiKey           : \"TKqYGJuaR0vSZQhVkXgPnLc8zszNrBQ3\",\n      gifPath          : \"gifs/search\",\n      defaultKeyword   : \"movies\",\n      defaultLimit     : 10,\n      defaultOffset    : 0\n    }\n  }\n}\n\n// resloving the defsult name of pages\nexport const DEFAULT_TITLE = \"Magic Gallery\"\n",
     "static": true,
     "longname": "/Users/majidparvin/Source/github/magic-gallery/src/config.js",
     "access": "public",
@@ -877,7 +877,7 @@
     "importPath": "magic-gallery/src/config.js",
     "importStyle": "{DEFAULT_TITLE}",
     "description": null,
-    "lineNumber": 35,
+    "lineNumber": 34,
     "undocument": true,
     "type": {
       "types": [
@@ -1220,7 +1220,7 @@
   },
   {
     "kind": "index",
-    "content": "# magic-gallery\n\n> A Vue.js project\n\n## Build Setup\n\n``` bash\n# install dependencies\nnpm install\n\n# serve with hot reload at localhost:8080\nnpm run dev\n\n# build for production with minification\nnpm run build\n\n# build for production and view the bundle analyzer report\nnpm run build --report\n\n# run unit tests\nnpm run unit\n\n# run e2e tests\nnpm run e2e\n\n# run all tests\nnpm test\n```\n\nFor a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).\n",
+    "content": "# Magic Gllery\n\n> A Vue.js/Redux project\n\n## Redux data flow in the project\n\n![Redux Data Flow](https://raw.githubusercontent.com/hedco-dev/magic-gallery/master/images/redux.jpg \"Redux Data Flow\")\n\n## Build Setup\n\n``` bash\n# install dependencies\nnpm install\n```\n\n### serve with hot reload at localhost:8080, you must first run the on [data provider project](https://github.com/hedco-dev/Magic-Photo-Provider) on port 5000 and also use a smart way to render items in the gallery.\n\n``` bash\nnpm start\n```\n\n### serve with hot reload at localhost:8080, it does not need to use local data provider and call target API directly and also has a so simple way to render items in gallery.\n\n``` bash\nnpm run dev2\n\n# build for production with minification\nnpm run build\n\n# build for production and view the bundle analyzer report\nnpm run build --report\n\n# run unit tests\nnpm run unit\n\n# run doc to regenerate documentation \nnpm run doc\n\n# run all tests\nnpm test\n```\n\nFor a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).\n",
     "longname": "/Users/majidparvin/Source/github/magic-gallery/README.md",
     "name": "./README.md",
     "static": true,
